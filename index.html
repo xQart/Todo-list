@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App(2023)</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HomePage</h1>
+        <section class="task-form">
+            <h2>Whats' on your todo list?</h2>
+            <form id="new-todo-form">
+                <input type="text" id="content" name="content" placeholder="Task todo" autocomplete="off" autofocus required />
+                <button  type="submit">Add todo</button>
+            </form>
+            <!-- <input type="submit" value="Add todo" /> -->
+        </section>
+    </header>
+
+
+    <section >
+        <div class="progress">
+            <h2>Today progress Summary</h2>
+            <div">
+                <ul class="stats">
+                    <li>
+                        <span id="Reaming">Reaming</span><span id="Reaming-tasks"> 0</span>
+                    </li>
+                    <li>
+                        <span id="Completed">Completed</span><span id="Completed-tasks"> 0</span>
+                    </li>
+                    <li>
+                        <span id="Total">Total</span><span id="Total-tasks"> 0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="todo-list">
+        <h2>Today's Tasks</h2>
+        <div class="list", id="todo-list">
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

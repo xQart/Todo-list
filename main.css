@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Electrolize', sans-serif;
+}
+
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+}
+ 
+
+body{
+    background:whitesmoke;
+    -webkit-font-smoothing: antialiased;
+    padding: 2%;
+    line-height: 1;
+}
+
+section,h1{
+    margin: 2rem ;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.task-form input[type="text"]{
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 0rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+/* .task-form input[type="submit"]{
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    background-color: #165ebd;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+    
+}
+
+.task-form input[type="submit"]:hover{
+    opacity: 0.95;
+} */
+
+.task-form button[type="submit"]{
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    background-color: #165ebd;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+    
+}
+
+.task-form button[type="submit"]:hover{
+    opacity: 0.95;
+} 
+
+
+
+.progress ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    background-color: #165ebd;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+}
+
+.progress li{
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 3);
+    text-align: center;
+    
+}
+
+
+#Reaming{
+    background-color:  #4894FE;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    padding: 10px;
+}
+
+#Reaming-tasks{
+    background-color: #ec921c;
+    border-radius:  0rem 0.5rem 0.5rem 0rem;
+    padding: 10px;
+}
+
+
+#Completed{
+    background-color:  #4894FE;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    padding: 10px;
+}
+
+#Completed-tasks{
+    background-color: #ec921c;
+    border-radius:  0rem 0.5rem 0.5rem 0rem;
+    padding: 10px;
+}
+
+
+#Total{
+    background-color:  #4894FE;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    padding: 10px;
+}
+
+#Total-tasks{
+    background-color: #ec921c;
+    border-radius:  0rem 0.5rem 0.5rem 0rem;
+    padding: 10px;
+}
+
+.todo-list .list{
+    margin:1rem 0;
+}
+
+.todo-list .todo-item{
+    display: flex;
+    align-items:first baseline;
+    background-color: #4894FE;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+
+.todo-item .todo-content{
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-content input[type="text"]{
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    
+    text-align: left;
+
+}
+
+.todo-item .actions{
+    display: flex;
+    align-items: center;
+}
+.todo-item .actions button{
+    display: block;
+    padding: 0.5rem;
+    border: 0.25rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todo-item .actions button:hover{
+    opacity: 0.75;
+}
+
+.todo-item .actions .Edit{
+    margin-right: 0.5rem;
+    background-color: #ec921c;
+}
+
+.todo-item .actions .Done{
+    margin-right: 0.5rem;
+    background-color: #ec921c;
+}
+
+.todo-item .actions .Delete{
+    margin-right: 0.5rem;
+    background-color: #ec921c;
+}
+
+.todo-list .todo-item.done {
+    background-color: #f2f2f2; /* Cambia el color de fondo a gris */
+}
